@@ -21,10 +21,6 @@ const userSchema = new mongoose.Schema({
     isAdmin: {
         type: Boolean,
         default: false
-    },
-    mobileNo: {
-        type: String,
-        required: [true, 'Mobile Number is required']
     }
 });
 
