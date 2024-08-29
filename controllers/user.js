@@ -31,7 +31,8 @@ module.exports.registerUser = (req, res) => {
 			lastName:  req.body.lastName,
 			email:  req.body.email,
 			// 10 salt rounds
-			password: bcrypt.hashSync( req.body.password, 10)
+			password: bcrypt.hashSync( req.body.password, 10),
+			mobileNo:  req.body.mobileNo
 		})
 		// Saves the created user to our database
 		return newUser.save()
